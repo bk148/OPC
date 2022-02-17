@@ -103,7 +103,7 @@ class Scraper:
                 print(f"scraping page {pg}")
                 links: [str] = self._get_links(soup_status[0])
                 self._extract_info(links)
-                pg += 50
+                pg += 1
             else:
                 print("The End")
                 break
